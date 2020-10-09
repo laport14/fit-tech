@@ -92,23 +92,23 @@ EXAMPLE RESPONSE
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Header and Nav Component | H | 3hrs|  |  |
+| Header and Nav Component | H | 2hrs|  |  |
 | Home Page Component | H | 3hrs|  |  |
-| Footer Component | H | 3hrs|  |  |
+| Footer Component | H | 1.5hrs|  |  |
 | RunLog Component | H | 3hrs|  | |
 | BikeLog Component | H | 3hrs|  |  |
 | Lift Component | H | 3hrs|  |  |
-| Linking and Routing the Components | H | 3hrs|  |  |
-| Implementing Icons in Linking | H | 3hrs|  |  |
+| Linking and Routing the Components | H | 3.5hrs|  |  |
+| Implementing Icons in Linking | H | 3.5hrs|  |  |
 | useEffects and API calls | H | 3hrs|  |  |
 | Update Form | H | 3hrs|  |  |
-| Delete Logged Post | H | 3hrs|  |  |
-| Building AirTable | H | 3hrs| |  |
+| Delete Logged Post | H | 2hrs|  |  |
+| Building AirTable | H | 1.5hrs| |  |
 | Component Tree Structure | H | 3hrs|  |  |
 | Troubleshooting conversion and sorting of API data | H | 3hrs|  |  |
 | Debugging | H | 3hrs|  |  |
-| ReadMe Updates | H | 3hrs|  |  |
-| Total | H | 6hrs|  |  |
+| ReadMe Updates | H | 1.5hrs|  |  |
+| Total | H | 42.5hrs|  |  |
 
 ## SWOT Analysis
 https://drive.google.com/file/d/1C5gVK4SiCbpJbR5RJUL_uqiSyr0LxjD_/view?usp=sharing
