@@ -1,62 +1,92 @@
-# Project Overview
-
 ## Project Name
 
-The name of your project.
+Fit-Tech
 
 ## Project Description
 
-Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and\or functionality.
+Fit-tech is an application that allows the user to log a workout (run, bike, or lift) and see their logged posts on their respective pages. The user will have the capability of updating their logged workouts and deleting them. There will be a home page that has icons for running, biking, and lifting. When the user selects their preferred icon then they will be brought to the respective page.
 
 ## Wireframes
 
-Upload images of your wireframes to an image hosting site or add them to an assets folder in your repo and link them here with a description of each specific wireframe.
+https://www.figma.com/file/WXPo94ISmhQ4R8egrKvwSL/Untitled?node-id=0%3A1
 
 ## Component Hierarchy
-Show your component hierarchy here! Use [this](https://cms-assets.tutsplus.com/uploads/users/1795/posts/30352/image/GettingStartedWithReduxTutorial-React-Component-Structure.png) as an example.
+https://lucid.app/invitations/accept/998ccdc5-8dc4-4a01-8d78-35c23ea4ed3a
 
 ## API and Data Sample
 
-Specify the API you are using and include a link. Show us a snippet of JSON returned by your API so we know you can access it and get the info you need
+REACT_APP_AIRTABLE_BASE=appnoC3yRAvOfC5YO
+
+EXAMPLE RESPONSE
+{
+    "records": [
+        {
+            "id": "recsqFTVfbfpHsXDV",
+            "fields": {
+                "date": "January 3, 2020",
+                "distance": "4.5",
+                "runTime": "39",
+                "createdAt": "2020-10-03T22:37:38.000Z",
+                "record id": "recsqFTVfbfpHsXDV"
+            },
+            "createdTime": "2020-10-03T22:37:38.000Z"
+        },
+        {
+            "id": "rechU84lpyWg9Ck9N",
+            "fields": {
+                "date": "January 5, 2020",
+                "distance": "4.1",
+                "runTime": "39",
+                "createdAt": "2020-10-03T22:37:38.000Z",
+                "record id": "rechU84lpyWg9Ck9N"
+            },
+            "createdTime": "2020-10-03T22:37:38.000Z"
+        },
+        {
+            "id": "recAP8Lcw1cFj3AVD",
+            "fields": {
+                "date": "January 25, 2020",
+                "distance": "5.4",
+                "runTime": "46",
+                "createdAt": "2020-10-03T22:37:38.000Z",
+                "record id": "recAP8Lcw1cFj3AVD"
+            },
+            "createdTime": "2020-10-03T22:37:38.000Z"
+        }
+    ],
+    "offset": "recAP8Lcw1cFj3AVD"
+}
 
 ### MVP/PostMVP
 
-The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
-
 #### MVP 
-*These are examples only. Replace with your own MVP features.*
 
-- Find and use external api 
-- Render data on page 
-- Allow user to choose favorites 
+- Build Airtable and import data to React App 
+- Use Icons on my homepage to link to the logged data from my Air Table
+- When selecting the Icons, render the data specific to the icon on the page.
 
 #### PostMVP  
-*These are examples only. Replace with your own Post-MVP features.*
 
-- Add second API
-- Use local storage to save user favorites
+- Add a weather app API and append weather Data to the Home Page for the user to make an informed decision about what fitness goals they will pursue for they day
+- Add a separate card or link for updating the existing workouts in the log
+- Add a hidden easter egg on the front page
+- Tracker for calories burned appended to the Home Page
+- Tracker for Miles Ran/Biked appended to the Home Page & Goal tracker
+
 
 ## Project Schedule
 
-This schedule will be used to keep track of your progress throughout the week and align with our expectations.  
-
-You are **responsible** for scheduling time with your squad to seek approval for each deliverable by the end of the corresponding day, excluding `Saturday` and `Sunday`.
-
 |  Day | Deliverable | Status
 |---|---| ---|
-|July 10-12| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
-|July 13| Project Approval | Incomplete
-|July 13| Core Application Structure (HTML, CSS, etc.) | Incomplete
-|July 14| Pseudocode / actual code | Incomplete
-|July 15| Initial Clickable Model  | Incomplete
-|July 16| MVP | Incomplete
-|July 17| Presentations | Incomplete
+|October 8| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
+|October 9| Project Approval | Incomplete
+|October 12| Core React Components Built | Incomplete
+|October 13| Functional Components | Incomplete
+|October 14| CSS integrated with Functional Components  | Incomplete
+|October 15| MVP & Advanced CSS | Incomplete
+|October 16| Post MVP & Presentations | Incomplete
 
 ## Timeframes
-
-Tell us how long you anticipate spending on each area of development. Be sure to consider how many hours a day you plan to be coding and how many days you have available until presentation day.
-
-Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe. Throughout your project, keep track of your Time Invested and Actual Time and update your README regularly.
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
@@ -65,11 +95,4 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | Total | H | 6hrs| 5hrs | 5hrs |
 
 ## SWOT Analysis
-
-### Strengths:
-
-### Weaknesses:
-
-### Opportunities:
-
-### Threats:
+https://drive.google.com/file/d/1C5gVK4SiCbpJbR5RJUL_uqiSyr0LxjD_/view?usp=sharing
