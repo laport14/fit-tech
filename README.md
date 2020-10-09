@@ -4,7 +4,7 @@ Fit-Tech
 
 ## Project Description
 
-Fit-tech is an application that allows the user to log a workout (run, bike, or lift) and see their logged posts on their respective pages. The user will have the capability of updating their logged workouts and deleting them. There will be a home page that has icons for running, biking, and lifting. When the user selects their preferred icon then they will be brought to the respective page.
+Fit-tech is an application that allows the user to log a workout (run, bike, or lift) and see their logged posts on their respective pages. The user will also have the capability of deleting their logged posts if need be. There will be a home page that has icons for running, biking, and lifting. When the user selects their preferred icon then they will be brought to the respective page.
 
 ## Wireframes
 
@@ -61,17 +61,19 @@ EXAMPLE RESPONSE
 
 #### MVP 
 
-- Build Airtable and import data to React App 
+- Build Airtable and import data to the React App 
 - Use Icons on my homepage to link to the logged data from my Air Table
 - When selecting the Icons, render the data specific to the icon on the page.
+- Add workouts from a form and append to page
+- Ability to delete existing data on the log page
 
 #### PostMVP  
 
-- Add a weather app API and append weather Data to the Home Page for the user to make an informed decision about what fitness goals they will pursue for they day
+- Add a weather app API and append weather Data to the Home Page for the user.
 - Add a separate card or link for updating the existing workouts in the log
-- Add a hidden easter egg on the front page
 - Tracker for calories burned appended to the Home Page
 - Tracker for Miles Ran/Biked appended to the Home Page & Goal tracker
+- Darkmode / Lightmode toggle
 
 
 ## Project Schedule
@@ -80,8 +82,8 @@ EXAMPLE RESPONSE
 |---|---| ---|
 |October 8| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
 |October 9| Project Approval | Incomplete
-|October 12| Core React Components Built | Incomplete
-|October 13| Functional Components | Incomplete
+|October 12| Core React structure built | Incomplete
+|October 13| Functional Components and Site Functionality | Incomplete
 |October 14| CSS integrated with Functional Components  | Incomplete
 |October 15| MVP & Advanced CSS | Incomplete
 |October 16| Post MVP & Presentations | Incomplete
@@ -90,9 +92,23 @@ EXAMPLE RESPONSE
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
-| Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
-| Total | H | 6hrs| 5hrs | 5hrs |
+| Header and Nav Component | H | 3hrs|  |  |
+| Home Page Component | H | 3hrs|  |  |
+| Footer Component | H | 3hrs|  |  |
+| RunLog Component | H | 3hrs|  | |
+| BikeLog Component | H | 3hrs|  |  |
+| Lift Component | H | 3hrs|  |  |
+| Linking and Routing the Components | H | 3hrs|  |  |
+| Implementing Icons in Linking | H | 3hrs|  |  |
+| useEffects and API calls | H | 3hrs|  |  |
+| Update Form | H | 3hrs|  |  |
+| Delete Logged Post | H | 3hrs|  |  |
+| Building AirTable | H | 3hrs| |  |
+| Component Tree Structure | H | 3hrs|  |  |
+| Troubleshooting conversion and sorting of API data | H | 3hrs|  |  |
+| Debugging | H | 3hrs|  |  |
+| ReadMe Updates | H | 3hrs|  |  |
+| Total | H | 6hrs|  |  |
 
 ## SWOT Analysis
 https://drive.google.com/file/d/1C5gVK4SiCbpJbR5RJUL_uqiSyr0LxjD_/view?usp=sharing
