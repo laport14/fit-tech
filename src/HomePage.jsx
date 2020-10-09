@@ -1,27 +1,49 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import "./App.css";
 
 function HomePage(props) {
   return (
     <div>
       <h3>Welcome to Fit-Tech</h3>
-      <img
-        alt="run icon"
-        src="https://tinyurl.com/yy4ka48p"
-        width="40px"
-        height="40px"
-      />{" "}
-      <img
-        alt="bike icon"
-        src="https://tinyurl.com/y44rxacf"
-        width="40px"
-        height="40px"
-      />{" "}
-      <img
-        alt="workout icon"
-        src="https://tinyurl.com/y2wc6kww"
-        width="40px"
-        height="40px"
-      />
+      <div className="icons">
+        <Link to="/run">
+          <img
+            className="run-icon"
+            alt="run icon"
+            src="https://tinyurl.com/yy4ka48p"
+            width="40px"
+            height="40px"
+          />
+        </Link>{" "}
+        <Link to="/bike">
+          <img
+            className="bike-icon"
+            alt="bike icon"
+            src="https://tinyurl.com/y44rxacf"
+            width="40px"
+            height="40px"
+          />
+        </Link>{" "}
+        <Link to="/workout">
+          <img
+            className="workout-icon"
+            alt="workout icon"
+            src="https://tinyurl.com/y2wc6kww"
+            width="40px"
+            height="40px"
+          />
+        </Link>
+        <Link to="/yoga">
+          <img
+            className="yoga-icon"
+            alt="yoga icon"
+            src="https://tinyurl.com/y52ox2cr"
+            width="35px"
+            height="35px"
+          />
+        </Link>
+      </div>
     </div>
   );
 }
