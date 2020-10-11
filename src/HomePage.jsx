@@ -4,8 +4,8 @@ import "./App.css";
 
 function HomePage(props) {
   return (
-    <div>
-      <h3>Welcome to Fit-Tech</h3>
+    <div className="nav-container">
+      <h3 className="nav-title">Choose Your Workout Below</h3>
       <div className="icons">
         <Link to="/run">
           <img

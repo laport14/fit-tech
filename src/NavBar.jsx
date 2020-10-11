@@ -1,12 +1,20 @@
-import React from 'react';
-import {Link} from "react-router-dom"
+import React from "react";
+import { Link } from "react-router-dom";
+import "./App.css";
 
 function NavBar(props) {
   return (
     <div>
       <Link to="/">
-        <img alt="Home Icon" src="https://tinyurl.com/y2qvmk3x" width='25px' height="25px" />
+        <img
+          className="home-icon"
+          alt="Home Icon"
+          src="https://tinyurl.com/y2qvmk3x"
+          width="25px"
+          height="25px"
+        />
       </Link>
+      <h3>Fit-Tech</h3>
     </div>
   );
 }
