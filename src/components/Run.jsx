@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link, Route } from "react-router-dom";
 import axios from "axios";
-import CreateRunButton from "./CreateRunButton";
+import CreateLogButton from "./CreateLogButton";
 import Delete from "./Delete"
 
 function Run(props) {
@@ -28,7 +28,7 @@ function Run(props) {
   return (
     <div className="container">
       
-      <CreateRunButton exercise="run"/>
+      <CreateLogButton exercise="run"/>
       
 
         {runData.map((runData) => (

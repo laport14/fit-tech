@@ -73,7 +73,7 @@ float: right;
   margin:10px;
 }
 
-.workout-icon {
+.lift-icon {
   margin:10px;
 }
 
@@ -89,7 +89,7 @@ float: right;
   transform: scale(1.3);
 }
 
-.workout-icon:hover {
+.lift-icon:hover {
   transform: scale(1.3);
 }
 

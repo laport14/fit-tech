@@ -2,7 +2,7 @@ import React from 'react';
 import { Link, Route } from "react-router-dom";
 
 
-function CreateRunButton(props) {
+function CreateLogButton(props) {
   return (
     <div>
       <Link to={`/${props.exercise}/create`}>
@@ -13,4 +13,4 @@ function CreateRunButton(props) {
   );
 }
 
-export default CreateRunButton;
+export default CreateLogButton;

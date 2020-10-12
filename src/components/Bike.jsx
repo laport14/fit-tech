@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import {Link, Route} from "react-router-dom"
 import axios from "axios";
+import CreateLogButton from "./CreateLogButton";
 import Delete from "./Delete"
 
 function Bike(props) {
@@ -26,12 +27,16 @@ function Bike(props) {
   }, [fetchData]);
   return (
     <div className='container'>
+
+    <CreateLogButton exercise="bike"/>
+
       {bikeData.map((bikeData) => (
         <div className='loggedData' key={bikeData.id}>
           <p>Date: {bikeData.fields.date}</p>
           <p>Distance: {bikeData.fields.distance} miles</p>
           <p>Duration: {bikeData.fields.duration} minutes</p>
           <p>Calories: {bikeData.fields.calories}</p>
+          <p>Notes: {bikeData.fields.notes}</p>
           <Delete id={bikeData.id} setFetchData={setFetchData} />
         </div>
       ))}

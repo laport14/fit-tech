@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, Route, withRouter } from "react-router-dom";
+import { Route, withRouter } from "react-router-dom";
 import HomePage from "./components/HomePage";
 import "./App.css";
 import Footer from "./components/Footer";
@@ -51,7 +51,7 @@ function App(props) {
           ? RunStyle
           : props.location.pathname === "/bike"
           ? BikeStyle
-          : props.location.pathname === "/workout"
+          : props.location.pathname === "/lift"
           ? WorkoutStyle
           : props.location.pathname === "/yoga"
           ? YogaStyle
@@ -69,7 +69,7 @@ function App(props) {
       <Route exact path="/bike">
         <Bike />
       </Route>
-      <Route exact path="/workout">
+      <Route exact path="/lift">
         <Workout />
       </Route>
       <Route exact path="/yoga">

@@ -25,10 +25,10 @@ function HomePage(props) {
             height="40px"
           />
         </Link>{" "}
-        <Link to="/workout">
+        <Link to="/lift">
           <img
-            className="workout-icon"
-            alt="workout icon"
+            className="lift-icon"
+            alt="lift icon"
             src="https://tinyurl.com/y2wc6kww"
             width="40px"
             height="40px"

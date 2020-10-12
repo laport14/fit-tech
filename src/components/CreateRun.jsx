@@ -7,6 +7,7 @@ function CreateRun(props) {
   const [distance, setDistance] = useState("");
   const [duration, setDuration] = useState("");
   const [calories, setCalories] = useState("");
+  const [notes, setNotes] = useState("")
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -14,7 +15,8 @@ function CreateRun(props) {
       date,
       distance,
       duration,
-      calories
+      calories,
+      notes
     };
 
     const airtableURL = `https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASE}/${props.match.params.exercise}`;
@@ -33,6 +35,7 @@ function CreateRun(props) {
     setDistance("");
     setDuration("");
     setCalories("")
+    setNotes("")
   };
 
   return (
@@ -50,7 +53,7 @@ function CreateRun(props) {
         <input
           name="distance"
           type="text"
-          placeholder="distance in miles"
+          placeholder="Distance in Miles"
           value={distance}
           onChange={(e) => setDistance(e.target.value)}
         />
@@ -58,7 +61,7 @@ function CreateRun(props) {
         <input
           name="duration"
           type="text"
-          placeholder="total run time"
+          placeholder="Log Duration if Applicable"
           value={duration}
           onChange={(e) => setDuration(e.target.value)}
         />
@@ -66,11 +69,19 @@ function CreateRun(props) {
         <input
           name="calories"
           type="text"
-          placeholder="calories burned"
+          placeholder="Calories Burned"
           value={calories}
           onChange={(e) => setCalories(e.target.value)}
         />
-        <button type="submit">Log Your Run!</button>
+        <label htmlFor="notes">Notes:</label>
+        <input
+          name="notes"
+          type="text"
+          placeholder="Log Your Notes Here"
+          value={notes}
+          onChange={(e) => setNotes(e.target.value)}
+        />
+        <button type="submit">Log Your Hard Work!</button>
       </form>
     </div>
   );

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import {Link, Route} from "react-router-dom"
 import axios from "axios";
+import CreateLogButton from "./CreateLogButton";
 import Delete from "./Delete"
 
 function Workout(props) {
@@ -26,6 +27,10 @@ function Workout(props) {
   }, [fetchData]);
   return (
     <div className='container'>
+      
+      <CreateLogButton exercise="lift" />
+      
+
       {workoutData.map((workoutData) => (
         <div className='loggedData' key={workoutData.id}>
           <p>Date: {workoutData.fields.date}</p>
