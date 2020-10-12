@@ -12,7 +12,7 @@ import CreateRun from "./components/CreateRun";
 
 function App(props) {
   const RunStyle = {
-    backgroundImage: `url("https://tinyurl.com/y3jebo5s")`,
+    backgroundImage: `url("https://tinyurl.com/yyjm5gjm")`,
     backgroundSize: `cover`,
     backgroundPosition: `center center`,
     backgroundRepeat: `no-repeat`,

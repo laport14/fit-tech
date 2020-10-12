@@ -2,7 +2,7 @@ import React from "react";
 
 function Footer(props) {
   return (
-    <div>
+    <div className="footer">
       <a href="https://www.linkedin.com/in/laportegeoffrey/">
         <img
           className="linkedin-icon"
