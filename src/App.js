@@ -8,6 +8,7 @@ import Bike from './Bike'
 import Run from './Run'
 import Workout from './Workout'
 import Yoga from "./Yoga"
+import CreateRun from "./CreateRun"
 
 function App() {
   return (
@@ -30,6 +31,11 @@ function App() {
       <Route exact path="/yoga">
         <Yoga />
       </Route>
+
+      <Route exact path='/run/CreateRun'>
+        <CreateRun />
+      </Route>
+
       
         <Footer />
       

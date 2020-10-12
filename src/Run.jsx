@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from "react";
+import { Link, Route } from "react-router-dom";
 import axios from "axios";
-import "./App.css"
+import "./App.css";
+import CreateRunButton from "./CreateRunButton";
+import CreateRun from "./CreateRun"
 
 function Run(props) {
   const [runData, setRunData] = useState([]);
@@ -23,16 +26,20 @@ function Run(props) {
     getData();
   }, []);
   return (
-    <div className='container'>
-      {runData.map((runData) => (
-        <div className='loggedData'>
-          <p>Date: {runData.fields.date}</p>
-          <p>Distance: {runData.fields.distance} miles</p>
-          <p>Duration: {runData.fields.duration} minutes</p>
-          <p>Calories: {runData.fields.calories}</p>
-        </div>
-      ))}
-    </div>
+    <div className="container">
+      
+      <CreateRunButton />
+      
+
+        {runData.map((runData) => (
+          <div className="loggedData">
+            <p>Date: {runData.fields.date}</p>
+            <p>Distance: {runData.fields.distance} miles</p>
+            <p>Duration: {runData.fields.duration} minutes</p>
+            <p>Calories: {runData.fields.calories}</p>
+          </div>
+        ))}
+      </div>
   );
 }
 
