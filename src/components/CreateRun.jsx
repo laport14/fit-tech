@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { withRouter } from "react-router-dom";
 import axios from "axios";
 
 function CreateRun(props) {
@@ -16,7 +17,7 @@ function CreateRun(props) {
       calories
     };
 
-    const airtableURL = `https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASE}/run`;
+    const airtableURL = `https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASE}/${props.match.params.exercise}`;
     await axios.post(
       airtableURL,
       { fields },
@@ -75,4 +76,4 @@ function CreateRun(props) {
   );
 }
 
-export default CreateRun;
+export default withRouter(CreateRun);

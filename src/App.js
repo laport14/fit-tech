@@ -1,21 +1,65 @@
-import React from 'react';
-import {Link, Route} from "react-router-dom"
-import HomePage from "./HomePage"
-import './App.css';
-import Footer from './Footer';
-import NavBar from './NavBar';
-import Bike from './Bike'
-import Run from './Run'
-import Workout from './Workout'
-import Yoga from "./Yoga"
-import CreateRun from "./CreateRun"
+import React from "react";
+import { Link, Route, withRouter } from "react-router-dom";
+import HomePage from "./components/HomePage";
+import "./App.css";
+import Footer from "./components/Footer";
+import NavBar from "./components/NavBar";
+import Bike from "./components/Bike";
+import Run from "./components/Run";
+import Workout from "./components/Workout";
+import Yoga from "./components/Yoga";
+import CreateRun from "./components/CreateRun";
 
-function App() {
+function App(props) {
+  const RunStyle = {
+    backgroundImage: `url("https://tinyurl.com/y3jebo5s")`,
+    backgroundSize: `cover`,
+    backgroundPosition: `center center`,
+    backgroundRepeat: `no-repeat`,
+    backgroundAttachment: `fixed`,
+  };
+
+  const BikeStyle = {
+    backgroundImage: `url("https://tinyurl.com/yycqvmcx")`,
+    backgroundSize: `cover`,
+    backgroundPosition: `center center`,
+    backgroundRepeat: `no-repeat`,
+    backgroundAttachment: `fixed`,
+  };
+
+  const WorkoutStyle = {
+    backgroundImage: `url("https://tinyurl.com/yxf9hq9s")`,
+    backgroundSize: `cover`,
+    backgroundPosition: `center center`,
+    backgroundRepeat: `no-repeat`,
+    backgroundAttachment: `fixed`,
+  };
+
+  const YogaStyle = {
+    backgroundImage: `url("https://tinyurl.com/y5kfxcaa")`,
+    backgroundSize: `cover`,
+    backgroundPosition: `center center`,
+    backgroundRepeat: `no-repeat`,
+    backgroundAttachment: `fixed`,
+  };
+
   return (
-    <div className="App">
-      
-        <NavBar />
-      
+    <div
+      className="App"
+      style={
+        props.location.pathname === "/run"
+          ? RunStyle
+          : props.location.pathname === "/bike"
+          ? BikeStyle
+          : props.location.pathname === "/workout"
+          ? WorkoutStyle
+          : props.location.pathname === "/yoga"
+          ? YogaStyle
+          : null
+      }
+    >
+      <NavBar />
+
       <Route exact path="/">
         <HomePage />
       </Route>
@@ -32,15 +76,13 @@ function App() {
         <Yoga />
       </Route>
 
-      <Route exact path='/run/CreateRun'>
+      <Route exact path="/:exercise/create">
         <CreateRun />
       </Route>
 
-      
-        <Footer />
-      
+      <Footer />
     </div>
   );
 }
 
-export default App;
+export default withRouter(App);

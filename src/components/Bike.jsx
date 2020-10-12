@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
 import {Link, Route} from "react-router-dom"
 import axios from "axios";
+import Delete from "./Delete"
 
 function Bike(props) {
   const [bikeData, setBikeData] = useState([]);
+  const [fetchData, setFetchData] = useState(false)
 
   useEffect(() => {
     const getData = async () => {
@@ -21,15 +23,16 @@ function Bike(props) {
       setBikeData(response.data.records);
     };
     getData();
-  }, []);
+  }, [fetchData]);
   return (
     <div className='container'>
       {bikeData.map((bikeData) => (
-        <div className='loggedData'>
-          <p>{bikeData.fields.date}</p>
+        <div className='loggedData' key={bikeData.id}>
+          <p>Date: {bikeData.fields.date}</p>
           <p>Distance: {bikeData.fields.distance} miles</p>
           <p>Duration: {bikeData.fields.duration} minutes</p>
           <p>Calories: {bikeData.fields.calories}</p>
+          <Delete id={bikeData.id} setFetchData={setFetchData} />
         </div>
       ))}
     </div>

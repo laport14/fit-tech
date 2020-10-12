@@ -28,6 +28,32 @@ h3 {
   float: right;
 }
 
+.delete-button {
+float: right;
+}
+
+/* https://www.w3schools.com/howto/howto_css_shake_image.asp as a source for the shake animation and keyframes below */
+.delete-button:hover {
+  background-color: red;
+  border: 1px solid red;
+  border-radius: 2px;
+  
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
 .icons{
   margin: 20px;
 }
@@ -38,10 +64,12 @@ h3 {
 
 .linkedin-icon {
   margin-right: 40px;
+  margin-bottom: 10px;
 }
 
 .github-icon {
   margin-left: 40px;
+  margin-bottom: 10px;
 }
 
 .run-icon {
@@ -90,7 +118,7 @@ h3 {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  text-align: center;
+  text-align: left;
   border: 1px solid black;
   max-width: 250px;
   max-height: 250px;
@@ -131,5 +159,6 @@ form {
   font-size: calc(10px + 2vmin);
   color: white;
 }
+
 
 

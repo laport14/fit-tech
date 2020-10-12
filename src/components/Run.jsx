@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { Link, Route } from "react-router-dom";
 import axios from "axios";
-import "./App.css";
 import CreateRunButton from "./CreateRunButton";
-import CreateRun from "./CreateRun"
+import Delete from "./Delete"
 
 function Run(props) {
   const [runData, setRunData] = useState([]);
+  const [fetchData, setFetchData] = useState(false)
 
   useEffect(() => {
     const getData = async () => {
@@ -24,19 +24,21 @@ function Run(props) {
       setRunData(response.data.records);
     };
     getData();
-  }, []);
+  }, [fetchData]);
   return (
     <div className="container">
       
-      <CreateRunButton />
+      <CreateRunButton exercise="run"/>
       
 
         {runData.map((runData) => (
-          <div className="loggedData">
+          <div className="loggedData" key={runData.id}>
             <p>Date: {runData.fields.date}</p>
             <p>Distance: {runData.fields.distance} miles</p>
             <p>Duration: {runData.fields.duration} minutes</p>
             <p>Calories: {runData.fields.calories}</p>
+            <p>Notes: {runData.fields.notes}</p>
+            <Delete id={runData.id} setFetchData={setFetchData} />
           </div>
         ))}
       </div>

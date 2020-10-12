@@ -5,8 +5,8 @@ import { Link, Route } from "react-router-dom";
 function CreateRunButton(props) {
   return (
     <div>
-      <Link to="/run/CreateRun">
-        <button className="button">Add A Run!</button>
+      <Link to={`/${props.exercise}/create`}>
+        <button className="button">Add</button>
       </Link>
       
     </div>

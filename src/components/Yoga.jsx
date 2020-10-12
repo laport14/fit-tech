@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
 import {Link, Route} from "react-router-dom"
 import axios from "axios";
+import Delete from "./Delete"
 
 function Yoga(props) {
   const [yogaData, setYogaData] = useState([]);
+  const [fetchData, setFetchData] = useState(false)
 
   useEffect(() => {
     const getData = async () => {
@@ -21,15 +23,16 @@ function Yoga(props) {
       setYogaData(response.data.records);
     };
     getData();
-  }, []);
+  }, [fetchData]);
   return (
     <div className='container'>
       {yogaData.map((yogaData) => (
-        <div className='loggedData'>
+        <div className='loggedData' key={yogaData.id}>
           <p>Date: {yogaData.fields.date}</p>
           <p>Duration: {yogaData.fields.duration} minutes</p>
           <p>Calories: {yogaData.fields.calories}</p>
           <p>Notes: {yogaData.fields.notes}</p>
+          <Delete id={yogaData.id} setFetchData={setFetchData} />
         </div>
       ))}
     </div>
