@@ -36,6 +36,8 @@ function CreateRun(props) {
     setDuration("");
     setCalories("")
     setNotes("")
+    //looking at the history and pushing back to the respective log page after submit
+    props.history.push(`/${props.match.params.exercise}`) 
   };
 
   return (

@@ -12,6 +12,7 @@ function NavBar(props) {
           width="25px"
           height="25px"
         />
+        {/* <img className="tired-icon" alt="Tired Icon" src ="https://tinyurl.com/yxmkbzcl"width="25px"height="25px"/> */}
       </Link>
       <h3>Fit-Tech</h3>
     </div>
