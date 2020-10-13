@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import CreateLogButton from "./CreateLogButton";
-import Delete from "./Delete"
+import Delete from "./Delete";
 
 function Yoga(props) {
   const [yogaData, setYogaData] = useState([]);
-  const [fetchData, setFetchData] = useState(false)
+  const [fetchData, setFetchData] = useState(false);
 
   useEffect(() => {
     const getData = async () => {
@@ -25,17 +25,20 @@ function Yoga(props) {
     getData();
   }, [fetchData]);
   return (
-    <div className='container'>
-
+    <div className="container">
       <CreateLogButton exercise="yoga" />
-      
+
       {yogaData.map((yogaData) => (
-        <div className='loggedData' key={yogaData.id}>
+        <div className="loggedData" key={yogaData.id}>
           <p>Date: {yogaData.fields.date}</p>
           <p>Duration: {yogaData.fields.duration} minutes</p>
           <p>Calories: {yogaData.fields.calories}</p>
           <p>Notes: {yogaData.fields.notes}</p>
-          <Delete id={yogaData.id} setFetchData={setFetchData} />
+          <Delete
+            id={yogaData.id}
+            setFetchData={setFetchData}
+            fetchData={fetchData}
+          />
         </div>
       ))}
     </div>

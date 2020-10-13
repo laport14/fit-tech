@@ -2,12 +2,12 @@ import React, { useState } from "react";
 import { withRouter } from "react-router-dom";
 import axios from "axios";
 
-function CreateRun(props) {
+function CreateLog(props) {
   const [date, setDate] = useState("");
   const [distance, setDistance] = useState("");
   const [duration, setDuration] = useState("");
   const [calories, setCalories] = useState("");
-  const [notes, setNotes] = useState("")
+  const [notes, setNotes] = useState("");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -16,7 +16,7 @@ function CreateRun(props) {
       distance,
       duration,
       calories,
-      notes
+      notes,
     };
 
     const airtableURL = `https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASE}/${props.match.params.exercise}`;
@@ -34,10 +34,10 @@ function CreateRun(props) {
     setDate("");
     setDistance("");
     setDuration("");
-    setCalories("")
-    setNotes("")
+    setCalories("");
+    setNotes("");
     //looking at the history and pushing back to the respective log page after submit
-    props.history.push(`/${props.match.params.exercise}`) 
+    props.history.push(`/${props.match.params.exercise}`);
   };
 
   return (
@@ -67,7 +67,7 @@ function CreateRun(props) {
           value={duration}
           onChange={(e) => setDuration(e.target.value)}
         />
-         <label htmlFor="calories">Calories:</label>
+        <label htmlFor="calories">Calories:</label>
         <input
           name="calories"
           type="text"
@@ -89,4 +89,4 @@ function CreateRun(props) {
   );
 }
 
-export default withRouter(CreateRun);
+export default withRouter(CreateLog);

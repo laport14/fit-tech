@@ -10,7 +10,7 @@
   flex-direction: column;
   justify-content: space-between;
   text-align: center;
-  background-color: #F78154;
+  background-color: #f78154;
 }
 
 .container {
@@ -20,8 +20,8 @@
   max-width: 400px;
   padding: 20px;
   max-height: 100%;
-  background-color: #4D9078;
-  opacity: .9;
+  background-color: #4d9078;
+  opacity: 0.9;
   box-shadow: 5px 5px 2.5px #607466;
 }
 
@@ -36,7 +36,7 @@
   margin: 0 auto;
   margin: 10px;
   padding: 10px;
-  background-color: #BEB7A4;
+  background-color: #beb7a4;
   box-shadow: 7px 7px 3.5px grey;
 }
 
@@ -56,6 +56,11 @@ form {
   padding: 10px;
 }
 
+.title{
+  font-size: 25px;
+  margin: 5px;
+}
+
 h3 {
   text-align: center;
 }
@@ -67,10 +72,10 @@ h3 {
 .footer {
   margin-top: 100px;
   padding: 10px;
-  background-color: #4D9078;
+  background-color: #4d9078;
 }
 
-.nav-title{
+.nav-title {
   text-align: center;
 }
 
@@ -79,49 +84,59 @@ h3 {
 }
 
 .delete-button {
-float: right;
+  float: right;
 }
-
 
 .delete-button:hover {
   background-color: red;
   border: 1px solid red;
   border-radius: 2px;
-  
 }
 
-.icons{
+.icons {
   margin: 20px;
 }
 
 .home-icon {
   margin-top: 20px;
-} 
+}
 
 .linkedin-icon {
-  margin-right: 40px;
+  margin-right: 500px;
   margin-bottom: 5px;
+  width: 20px;
+  height: 20px;
 }
 
 .github-icon {
   margin-left: 40px;
   margin-bottom: 5px;
+  width: 20px;
+  height: 20px;
 }
 
 .run-icon {
-  margin:10px;
+  margin: 50px;
+  width: 150px;
+  height: 150px;
 }
 
 .bike-icon {
-  margin:10px;
+  margin: 50px;
+  width: 150px;
+  height: 150px;
 }
 
 .lift-icon {
-  margin:10px;
+  margin: 50px;
+  width: 150px;
+  height: 150px;
 }
 
 .yoga-icon {
-  margin:10px;
+  margin: 50px;
+  width: 150px;
+  height: 150px;
 }
 
 .run-icon:hover {
@@ -144,19 +159,52 @@ float: right;
   display: flex;
   flex-direction: column;
   margin: auto;
-  max-width: 400px;
+  /* max-width: 400px; */
   padding: 20px;
-  max-height: 600px;
-  background-color: #4D9078;
-  opacity: .9;
+  background-color: #4d9078;
+  opacity: 0.9;
   box-shadow: 5px 5px 2.5px #607466;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media screen and (max-width: 1050px) {
+
+  .linkedin-icon {
+    margin-right: 500px;
+    margin-bottom: 5px;
+    width: 20px;
+    height: 20px;
   }
+  
+  .github-icon {
+    margin-left: 40px;
+    margin-bottom: 5px;
+    width: 20px;
+    height: 20px;
+  }
+  
+  .run-icon {
+    margin: 50px;
+    width: 100px;
+    height: 100px;
+  }
+  
+  .bike-icon {
+    margin: 50px;
+    width: 100px;
+    height: 100px;
+  }
+  
+  .lift-icon {
+    margin: 50px;
+    width: 100px;
+    height: 100px;
+  }
+  
+  .yoga-icon {
+    margin: 50px;
+    width: 100px;
+    height: 100px;
+  }
+
+
 }
-
-
-

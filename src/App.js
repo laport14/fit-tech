@@ -8,7 +8,7 @@ import Bike from "./components/Bike";
 import Run from "./components/Run";
 import Workout from "./components/Workout";
 import Yoga from "./components/Yoga";
-import CreateRun from "./components/CreateRun";
+import CreateLog from "./components/CreateLog";
 
 function App(props) {
   const RunStyle = {
@@ -43,6 +43,14 @@ function App(props) {
     backgroundAttachment: `fixed`,
   };
 
+  const CreateStyle = {
+    backgroundImage: `url("https://tinyurl.com/yxkvgq83")`,
+    backgroundSize: `cover`,
+    backgroundPosition: `center center`,
+    backgroundRepeat: `no-repeat`,
+    backgroundAttachment: `fixed`,
+  };
+
   return (
     <div
       className="App"
@@ -55,6 +63,8 @@ function App(props) {
           ? WorkoutStyle
           : props.location.pathname === "/yoga"
           ? YogaStyle
+          : props.location.pathname === `${props.location.pathname}`
+          ? CreateStyle
           : null
       }
     >
@@ -77,7 +87,7 @@ function App(props) {
       </Route>
 
       <Route exact path="/:exercise/create">
-        <CreateRun />
+        <CreateLog />
       </Route>
 
       <Footer />

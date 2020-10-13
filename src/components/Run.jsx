@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import CreateLogButton from "./CreateLogButton";
-import Delete from "./Delete"
+import Delete from "./Delete";
 
 function Run(props) {
   const [runData, setRunData] = useState([]);
-  const [fetchData, setFetchData] = useState(false)
+  const [fetchData, setFetchData] = useState(false);
 
   useEffect(() => {
     const getData = async () => {
@@ -26,21 +26,23 @@ function Run(props) {
   }, [fetchData]);
   return (
     <div className="container">
-      
-      <CreateLogButton exercise="run"/>
-      
+      <CreateLogButton exercise="run" />
 
-        {runData.map((runData) => (
-          <div className="loggedData" key={runData.id}>
-            <p>Date: {runData.fields.date}</p>
-            <p>Distance: {runData.fields.distance} miles</p>
-            <p>Duration: {runData.fields.duration} minutes</p>
-            <p>Calories: {runData.fields.calories}</p>
-            <p>Notes: {runData.fields.notes}</p>
-            <Delete id={runData.id} setFetchData={setFetchData} />
-          </div>
-        ))}
-      </div>
+      {runData.map((runData) => (
+        <div className="loggedData" key={runData.id}>
+          <p>Date: {runData.fields.date}</p>
+          <p>Distance: {runData.fields.distance} miles</p>
+          <p>Duration: {runData.fields.duration} minutes</p>
+          <p>Calories: {runData.fields.calories}</p>
+          <p>Notes: {runData.fields.notes}</p>
+          <Delete
+            id={runData.id}
+            setFetchData={setFetchData}
+            fetchData={fetchData}
+          />
+        </div>
+      ))}
+    </div>
   );
 }
 

@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import CreateLogButton from "./CreateLogButton";
-import Delete from "./Delete"
+import Delete from "./Delete";
 
 function Bike(props) {
   const [bikeData, setBikeData] = useState([]);
-  const [fetchData, setFetchData] = useState(false)
+  const [fetchData, setFetchData] = useState(false);
 
   useEffect(() => {
     const getData = async () => {
@@ -25,18 +25,21 @@ function Bike(props) {
     getData();
   }, [fetchData]);
   return (
-    <div className='container'>
-
-    <CreateLogButton exercise="bike"/>
+    <div className="container">
+      <CreateLogButton exercise="bike" />
 
       {bikeData.map((bikeData) => (
-        <div className='loggedData' key={bikeData.id}>
+        <div className="loggedData" key={bikeData.id}>
           <p>Date: {bikeData.fields.date}</p>
           <p>Distance: {bikeData.fields.distance} miles</p>
           <p>Duration: {bikeData.fields.duration} minutes</p>
           <p>Calories: {bikeData.fields.calories}</p>
           <p>Notes: {bikeData.fields.notes}</p>
-          <Delete id={bikeData.id} setFetchData={setFetchData} />
+          <Delete
+            id={bikeData.id}
+            setFetchData={setFetchData}
+            fetchData={fetchData}
+          />
         </div>
       ))}
     </div>

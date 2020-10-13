@@ -1,6 +1,5 @@
-import React from 'react';
-import { Link, Route } from "react-router-dom";
-
+import React from "react";
+import { Link } from "react-router-dom";
 
 function CreateLogButton(props) {
   return (
@@ -8,7 +7,6 @@ function CreateLogButton(props) {
       <Link to={`/${props.exercise}/create`}>
         <button className="button">Add</button>
       </Link>
-      
     </div>
   );
 }
