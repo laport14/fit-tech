@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function HomePage(props) {
   return (
     <div className="nav-container">
-      <h3 className="nav-title">Choose Your Workout Below</h3>
+      <h3 className="nav-title">Select Your Workout Below</h3>
       <div className="icons">
         <Link to="/run">
           <img

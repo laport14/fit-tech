@@ -10,7 +10,7 @@ function Footer(props) {
           src="https://res.cloudinary.com/briandanger/image/upload/v1568954107/linkedin_vnvo6s.png"
           width="20px"
           height="20px"
-        />
+        /></a>
         <a href="https://github.com/laport14">
           <img
             className="github-icon"
@@ -20,7 +20,6 @@ function Footer(props) {
             height="20px"
           />
         </a>
-      </a>
     </div>
   );
 }
