@@ -25,23 +25,27 @@ function Yoga(props) {
     getData();
   }, [fetchData]);
   return (
-    <div className="container">
-      <CreateLogButton exercise="yoga" />
+    <>
+      <div className="add-button">
+        <CreateLogButton exercise="yoga" />
+      </div>
 
-      {yogaData.map((yogaData) => (
-        <div className="loggedData" key={yogaData.id}>
-          <p>Date: {yogaData.fields.date}</p>
-          <p>Duration: {yogaData.fields.duration} minutes</p>
-          <p>Calories: {yogaData.fields.calories}</p>
-          <p>Notes: {yogaData.fields.notes}</p>
-          <Delete
-            id={yogaData.id}
-            setFetchData={setFetchData}
-            fetchData={fetchData}
-          />
-        </div>
-      ))}
-    </div>
+      <div className="container">
+        {yogaData.map((yogaData) => (
+          <div className="loggedData" key={yogaData.id}>
+            <p>Date: {yogaData.fields.date}</p>
+            <p>Duration: {yogaData.fields.duration} minutes</p>
+            <p>Calories: {yogaData.fields.calories}</p>
+            <p>Notes: {yogaData.fields.notes}</p>
+            <Delete
+              id={yogaData.id}
+              setFetchData={setFetchData}
+              fetchData={fetchData}
+            />
+          </div>
+        ))}
+      </div>
+    </>
   );
 }
 

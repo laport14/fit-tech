@@ -1,14 +1,14 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, withRouter } from "react-router-dom";
 
 function CreateLogButton(props) {
   return (
     <div>
       <Link to={`/${props.exercise}/create`}>
-        <button className="button">Add</button>
+        <button className="button">{`log your ${props.exercise} session!`}</button>
       </Link>
     </div>
   );
 }
 
-export default CreateLogButton;
+export default withRouter(CreateLogButton);

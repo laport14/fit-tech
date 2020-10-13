@@ -37,7 +37,7 @@ function HomePage(props) {
           <img
             className="yoga-icon"
             alt="yoga icon"
-            src="https://tinyurl.com/y2snd7m9"
+            src="https://tinyurl.com/yyy5youa"
             width="40px"
             height="40px"
           />

@@ -25,24 +25,27 @@ function Run(props) {
     getData();
   }, [fetchData]);
   return (
-    <div className="container">
-      <CreateLogButton exercise="run" />
-
-      {runData.map((runData) => (
-        <div className="loggedData" key={runData.id}>
-          <p>Date: {runData.fields.date}</p>
-          <p>Distance: {runData.fields.distance} miles</p>
-          <p>Duration: {runData.fields.duration} minutes</p>
-          <p>Calories: {runData.fields.calories}</p>
-          <p>Notes: {runData.fields.notes}</p>
-          <Delete
-            id={runData.id}
-            setFetchData={setFetchData}
-            fetchData={fetchData}
-          />
-        </div>
-      ))}
-    </div>
+    <>
+      <div className="add-button">
+        <CreateLogButton exercise="run" />
+      </div>
+      <div className="container">
+        {runData.map((runData) => (
+          <div className="loggedData" key={runData.id}>
+            <p>Date: {runData.fields.date}</p>
+            <p>Distance: {runData.fields.distance} miles</p>
+            <p>Duration: {runData.fields.duration} minutes</p>
+            <p>Calories: {runData.fields.calories}</p>
+            <p>Notes: {runData.fields.notes}</p>
+            <Delete
+              id={runData.id}
+              setFetchData={setFetchData}
+              fetchData={fetchData}
+            />
+          </div>
+        ))}
+      </div>
+    </>
   );
 }
 

@@ -76,14 +76,15 @@ function CreateLog(props) {
           onChange={(e) => setCalories(e.target.value)}
         />
         <label htmlFor="notes">Notes:</label>
-        <input
+        <textarea
+          className="text-box"
           name="notes"
           type="text"
           placeholder="Log Your Notes Here"
           value={notes}
           onChange={(e) => setNotes(e.target.value)}
         />
-        <button type="submit">Log Your Hard Work!</button>
+        <button className="form-submit" type="submit">Log Your Hard Work!</button>
       </form>
     </div>
   );
