@@ -16,7 +16,7 @@ function CreateLog(props) {
       distance,
       duration,
       calories,
-      notes,
+      notes: notes ? notes : "no input logged",
     };
 
     const airtableURL = `https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASE}/${props.match.params.exercise}`;

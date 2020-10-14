@@ -9,6 +9,7 @@ import Run from "./components/Run";
 import Workout from "./components/Workout";
 import Yoga from "./components/Yoga";
 import CreateLog from "./components/CreateLog";
+import Motivation from "./components/Motivation";
 
 function App(props) {
   const RunStyle = {
@@ -88,6 +89,10 @@ function App(props) {
 
       <Route exact path="/:exercise/create">
         <CreateLog />
+      </Route>
+
+      <Route exact path="/motivation">
+        <Motivation />
       </Route>
 
       <Footer />
