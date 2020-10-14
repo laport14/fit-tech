@@ -3,7 +3,6 @@ import { withRouter } from "react-router-dom";
 import axios from "axios";
 
 function Delete(props) {
-
   const handleDelete = async () => {
     const airtableURL = `https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASE}${props.match.path}/${props.id}`;
     await axios.delete(airtableURL, {
@@ -11,7 +10,6 @@ function Delete(props) {
         Authorization: `Bearer ${process.env.REACT_APP_AIRTABLE_KEY}`,
       },
     });
-    //need this here to rerender the page so that the input displays on the page without that page having to be reloaded
     props.setFetchData(!props.fetchData);
   };
 

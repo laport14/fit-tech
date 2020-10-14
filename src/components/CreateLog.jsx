@@ -84,7 +84,9 @@ function CreateLog(props) {
           value={notes}
           onChange={(e) => setNotes(e.target.value)}
         />
-        <button className="form-submit" type="submit">Log Your Hard Work!</button>
+        <button className="form-submit" type="submit">
+          Log Your Hard Work!
+        </button>
       </form>
     </div>
   );
