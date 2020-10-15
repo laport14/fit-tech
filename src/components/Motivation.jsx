@@ -8,8 +8,8 @@ function Motivation(props) {
         width="350"
         height="350"
         frameBorder="0"
-        class="giphy-embed"
         allowFullScreen
+        title="motivational giphy"
       ></iframe>
     </div>
   );
