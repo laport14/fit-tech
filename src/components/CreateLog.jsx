@@ -29,8 +29,7 @@ function CreateLog(props) {
         },
       }
     );
-    //need this here to rerender the page so that the input displays on the page without that page having to be reloaded
-    // props.setFetchUserPost(!props.fetchUserPost);
+
     setDate("");
     setDistance("");
     setDuration("");
