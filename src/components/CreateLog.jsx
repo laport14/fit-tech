@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { withRouter } from "react-router-dom";
 import axios from "axios";
+import WorkoutGif from "./WorkoutGif";
 
 function CreateLog(props) {
   const [date, setDate] = useState("");
@@ -87,6 +88,7 @@ function CreateLog(props) {
           Log Your Hard Work!
         </button>
       </form>
+      <WorkoutGif />
     </div>
   );
 }
