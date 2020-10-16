@@ -82,35 +82,35 @@ EXAMPLE RESPONSE
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|October 8| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
-|October 9| Project Approval | Incomplete
-|October 12| Core React structure built | Incomplete
-|October 13| Functional Components and Site Functionality | Incomplete
-|October 14| CSS integrated with Functional Components  | Incomplete
-|October 15| MVP & Advanced CSS | Incomplete
-|October 16| Post MVP & Presentations | Incomplete
+|October 8| Prompt / Wireframes / Priority Matrix / Timeframes | Complete
+|October 9| Project Approval | Complete
+|October 12| Core React structure built | Complete
+|October 13| Functional Components and Site Functionality | Complete
+|October 14| CSS integrated with Functional Components  | Complete
+|October 15| MVP & Advanced CSS | Complete
+|October 16| Post MVP & Presentations | Complete
 
 ## Timeframes
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Header and Nav Component | H | 2hrs|  |  |
-| Home Page Component | H | 3hrs|  |  |
-| Footer Component | H | 1.5hrs|  |  |
-| RunLog Component | H | 3hrs|  | |
-| BikeLog Component | H | 3hrs|  |  |
-| Lift Component | H | 3hrs|  |  |
-| Linking and Routing the Components | H | 3.5hrs|  |  |
-| Implementing Icons in Linking | H | 3.5hrs|  |  |
-| useEffects and API calls | H | 3hrs|  |  |
-| Update Form | H | 3hrs|  |  |
-| Delete Logged Post | H | 2hrs|  |  |
-| Building AirTable | H | 1.5hrs| |  |
-| Component Tree Structure | H | 3hrs|  |  |
-| Troubleshooting conversion and sorting of API data | H | 3hrs|  |  |
-| Debugging | H | 3hrs|  |  |
-| ReadMe Updates | H | 1.5hrs|  |  |
-| Total | H | 42.5hrs|  |  |
+| Header and Nav Component | H | 2hrs| 1hr | 1hr |
+| Home Page Component | H | 3hrs| 2.5hrs | 2.5hrs |
+| Footer Component | H | 1.5hrs| 1hr | 1hr |
+| RunLog Component | H | 3hrs| 3.5hrs | 3.5hrs |
+| BikeLog Component | H | 3hrs| 1.5hrs | 1.5hrs |
+| Lift Component | H | 3hrs| 1.5hrs | 1.5hrs |
+| Linking and Routing the Components | H | 3.5hrs| 3hrs | 3hrs |
+| Implementing Icons in Linking | H | 3.5hrs| 3hrs | 3hrs |
+| useEffects and API calls | H | 3hrs| 3hrs | 3hrs |
+| Update Form | H | 3hrs| 3.5hrs | 3.5hrs |
+| Delete Logged Post | H | 2hrs| 3hrs | 3hrs |
+| Building AirTable | H | 1.5hrs| 1hr | 1hr |
+| Component Tree Structure | H | 3hrs| 1.5hrs | 1.5hrs |
+| Troubleshooting conversion and sorting of API data | H | 3hrs| 3.5hrs | 3.5hrs |
+| Debugging | H | 3hrs| 3hrs | 3hrs |
+| ReadMe Updates | H | 1.5hrs| .5hrs | .5hrs |
+| Total | H | 42.5hrs| 36hrs | 36hrs |
 
 ## SWOT Analysis
 https://drive.google.com/file/d/1C5gVK4SiCbpJbR5RJUL_uqiSyr0LxjD_/view?usp=sharing
