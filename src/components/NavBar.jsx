@@ -8,7 +8,7 @@ function NavBar(props) {
         <img
           className="home-icon"
           alt="Home Icon"
-          src="https://tinyurl.com/y2qvmk3x"
+          src="home.png"
           width="25px"
           height="25px"
         />
