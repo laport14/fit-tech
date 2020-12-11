@@ -4,7 +4,7 @@ Fit-Tech
 
 ## Project Description
 
-Fit-Tech is an application that allows the user to log a workout (run, bike, or lift) and see their logged posts on their respective pages. The user will also have the capability of deleting their logged posts if need be. There will be a home page that has icons for running, biking, and lifting. When the user selects their preferred icon then they will be brought to the respective page.
+Fit-Tech is an application that allows the user to log a workout (run, bike, lift, and yoga) and see their logged posts on their respective pages. The user will also have the capability of deleting their logged posts if need be. There will be a home page that has icons for running, biking, lifting, and yoga. When the user selects their preferred icon then they will be brought to the respective page.
 
 Project web-address: https://fit-tech.netlify.app
 
