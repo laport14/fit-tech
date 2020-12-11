@@ -22,6 +22,7 @@
   max-height: 100%;
   max-width: 100%;
   opacity: 0.9;
+  justify-content: center;
 }
 
 .loggedData {
@@ -129,6 +130,7 @@ h3 {
 .giphy {
   margin-top: 10px;
   border-radius: 5px;
+  display: 
 }
 
 .delete-button {

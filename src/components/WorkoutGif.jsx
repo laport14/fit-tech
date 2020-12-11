@@ -8,7 +8,7 @@ function WorkoutGif(props) {
   useEffect(() => {
     const getData = async () => {
       const response = await axios.get(
-        `https://cors-anywhere.herokuapp.com/http://api.giphy.com/v1/gifs/search?q=${props.match.params.exercise}&api_key=8G7kE0PWuusFBW7K07znBsaK7WOa25Co&limit=25`
+        `http://api.giphy.com/v1/gifs/search?q=${props.match.params.exercise}&api_key=8G7kE0PWuusFBW7K07znBsaK7WOa25Co&limit=25`
       );
       setGifData(response.data.data[0].images.downsized.url);
     };

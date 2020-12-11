@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import home from '../assets/home.png'
 
 function NavBar(props) {
   return (
@@ -8,7 +9,7 @@ function NavBar(props) {
         <img
           className="home-icon"
           alt="Home Icon"
-          src="home.png"
+          src={home}
           width="25px"
           height="25px"
         />
